@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+  <title></title>
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<style type="text/css">
+
+  
+  
+  html,*{
+    margin:0;
+    padding:0;
+    font-family: Lato,sans-serif;
+  }
+  .lgn i { 
+            position: absolute; 
+        } 
+          
+        .lgn { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            display: flex;justify-content: center;padding-top: 100px;
+        } 
+  .fps i { 
+            position: absolute; 
+        } 
+          
+        .fps { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            display: flex;justify-content: center;padding-top: 100px;
+        } 
+          
+        .icon { 
+            padding: 10px; 
+            font-size: 20px;
+            min-width: 20px;
+             
+        } 
+        .icon1 { 
+            padding: 10px; 
+            font-size: 25px;
+            min-width: 20px;
+             
+        } 
+        
+          
+        #em,#ps,#fem { 
+            padding: 10px; 
+            width: 300px;
+            height: 20px;
+            text-align: center; 
+            border-radius: 10px;
+        } 
+
+        .fps{
+          display: none;
+        }
+
+        .fpass{
+          float: left;color: #32508c;font-size: 20px;cursor: pointer;
+        }
+  
+</style>
+
+<script type="text/javascript">
+  
+
+function register(){
+
+  document.getElementById("lscreen").style.display="none";
+
+  document.getElementById("fscreen").style.display="flex";
+
+
+}
+
+function login(){
+
+  document.getElementById("fscreen").style.display="none";
+
+  document.getElementById("lscreen").style.display="flex";
+
+
+}
+
+</script>
+
+</head>
+<body style="">
+<h1 style="text-align: center; padding: 5px;">Coursera</h1>
+
+<div style="" class="lgn" id="lscreen">
+  <form style="text-align: center;">
+    
+<h2 id="label">LOGIN</h2>
+<br><br>    
+     <i class="fa fa-envelope icon"></i>
+    <input type="email" name="" placeholder="email" id="em" style="font-size: 17px;" required>
+    <br><br> 
+     <i class="fa fa-lock icon1"></i>
+   <input type="password" name="" placeholder="password" id="ps" style="font-size: 17px;" required>
+<br><br>
+
+<a  onclick="" style="" class="fpass">Forgot Password ?</a><br><br><br>
+
+<a onclick="" style="border: 2px solid black;color: black;font-family: monospace;padding: 5px;font-size: 20px;cursor: pointer;">Login</a>
+
+<br><br><br>
+<h3 id="nn" style="color:#ff3333;font-family: Georgia;"></h3>
+
+<br><br><br><br>
+
+<a  onclick="register()" style="text-align: center;font-size: 20px;cursor: pointer;" >New User? Register Here </a><br><br><br>
+
+  </form>
+
+</div>
+
+
+
+<!--Register-->
+
+<div style="justify-content: center;padding-top: 100px;" class="fps" id="fscreen">
+  <form style="text-align: center;">
+   <h2>Sign Up</h2>
+<br><br>    
+<br><br>    
+   
+    
+    <i class="fa fa-envelope icon"></i>
+    <input type="email" name="" placeholder="Email" id="em" style="font-size: 17px;" required>
+    <br><br> 
+     <i class="fa fa-lock icon1"></i>
+   <input type="password" name="" placeholder="Password" id="ps" style="font-size: 17px;" required> <br><br> <br><br>
+
+    <a onclick="" style="border: 2px solid black;color: black;font-family: sans-serif;padding: 5px;font-size: 20px;cursor: pointer;">Submit</a>
+
+<br><br><br>
+<a onclick="login()" style="color: black;font-size: 20px;cursor: pointer;text-decoration: underline;">Back</a><br><br><br>
+      </form>
+
+</div>
+
+
+  
+
+</body>
+</html>
